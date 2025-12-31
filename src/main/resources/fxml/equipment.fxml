@@ -1,0 +1,24 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.java.com.home.gearrentpro.controller.EquipmentController">
+
+    <Label text="Equipment Management" style="-fx-font-size:16;"/>
+
+    <TextField fx:id="txtBrand" promptText="Brand"/>
+    <TextField fx:id="txtModel" promptText="Model"/>
+    <TextField fx:id="txtPrice" promptText="Daily Price"/>
+    <TextField fx:id="txtDeposit" promptText="Deposit Amount"/>
+
+    <ComboBox fx:id="cmbCategory" promptText="Category"/>
+    <ComboBox fx:id="cmbStatus" promptText="Status"/>
+
+    <Button text="Save Equipment"/>
+
+    <TableView fx:id="tblEquipment">
+        <columns>
+            <TableColumn text="Brand"/>
+            <TableColumn text="Model"/>
+            <TableColumn text="Status"/>
+        </columns>
+    </TableView>
+
+</VBox>

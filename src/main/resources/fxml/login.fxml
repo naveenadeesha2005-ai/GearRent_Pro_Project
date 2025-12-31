@@ -1,0 +1,13 @@
+
+
+
+<VBox spacing="12" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.java.com.home.gearrentpro.controller.LoginController">
+
+    <Label text="GearRent Pro" style="-fx-font-size:18;"/>
+    <TextField fx:id="txtUsername" promptText="Username"/>
+    <PasswordField fx:id="txtPassword" promptText="Password"/>
+    <Button text="Login" onAction="#login"/>
+    <Label fx:id="lblMessage"/>
+</VBox>

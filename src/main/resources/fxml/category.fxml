@@ -1,0 +1,20 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.java.com.home.gearrentpro.controller.CategoryController">
+
+    <Label text="Category Management" style="-fx-font-size:16;"/>
+
+    <TextField fx:id="txtName" promptText="Category Name"/>
+    <TextField fx:id="txtFactor" promptText="Base Price Factor"/>
+    <TextField fx:id="txtWeekend" promptText="Weekend Multiplier"/>
+
+    <Button text="Save Category"/>
+
+    <TableView fx:id="tblCategories">
+        <columns>
+            <TableColumn text="Name"/>
+            <TableColumn text="Factor"/>
+            <TableColumn text="Weekend Multiplier"/>
+        </columns>
+    </TableView>
+
+</VBox>

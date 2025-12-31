@@ -1,0 +1,28 @@
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="main.java.com.home.gearrentpro.controller.DashboardController">
+
+    <top>
+        <MenuBar>
+            <Menu text="Masters">
+                <MenuItem text="Branches"/>
+                <MenuItem text="Categories"/>
+                <MenuItem text="Equipment"/>
+            </Menu>
+            <Menu text="Operations">
+                <MenuItem text="Customers"/>
+                <MenuItem text="Reservations"/>
+                <MenuItem text="Rentals"/>
+            </Menu>
+            <Menu text="Reports">
+                <MenuItem text="Revenue Report"/>
+                <MenuItem text="Utilization Report"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <Label text="Welcome to GearRent Pro"
+               style="-fx-font-size:20;"/>
+    </center>
+
+</BorderPane>

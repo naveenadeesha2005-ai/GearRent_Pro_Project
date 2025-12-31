@@ -1,0 +1,23 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.java.com.home.gearrentpro.controller.ReservationController">
+
+    <Label text="Equipment Reservation" style="-fx-font-size:16;"/>
+
+    <ComboBox fx:id="cmbBranch" promptText="Branch"/>
+    <ComboBox fx:id="cmbEquipment" promptText="Equipment"/>
+    <ComboBox fx:id="cmbCustomer" promptText="Customer"/>
+
+    <DatePicker fx:id="dpStart"/>
+    <DatePicker fx:id="dpEnd"/>
+
+    <Button text="Reserve"/>
+
+    <TableView fx:id="tblReservations">
+        <columns>
+            <TableColumn text="Customer"/>
+            <TableColumn text="Equipment"/>
+            <TableColumn text="Period"/>
+        </columns>
+    </TableView>
+
+</VBox>

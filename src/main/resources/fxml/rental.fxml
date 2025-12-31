@@ -1,0 +1,24 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.java.com.home.gearrentpro.controller.RentalController">
+
+    <Label text="Equipment Rental" style="-fx-font-size:16;"/>
+
+    <ComboBox fx:id="cmbEquipment" promptText="Equipment"/>
+    <ComboBox fx:id="cmbCustomer" promptText="Customer"/>
+
+    <DatePicker fx:id="dpStart"/>
+    <DatePicker fx:id="dpEnd"/>
+
+    <Label fx:id="lblAmount" text="Total Amount: 0.00"/>
+
+    <Button text="Issue Rental"/>
+
+    <TableView fx:id="tblRentals">
+        <columns>
+            <TableColumn text="Rental ID"/>
+            <TableColumn text="Customer"/>
+            <TableColumn text="Status"/>
+        </columns>
+    </TableView>
+
+</VBox>

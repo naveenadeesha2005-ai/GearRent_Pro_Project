@@ -1,0 +1,21 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.java.com.home.gearrentpro.controller.EquipmentUtilizationReportController">
+
+    <HBox spacing="10">
+        <ComboBox fx:id="cmbBranch" promptText="Select Branch"/>
+        <DatePicker fx:id="dpFrom"/>
+        <DatePicker fx:id="dpTo"/>
+        <Button text="Generate Report" onAction="#loadReport"/>
+    </HBox>
+
+    <TableView fx:id="tblReport">
+        <columns>
+            <TableColumn fx:id="colEquipmentId" text="Equipment ID"/>
+            <TableColumn fx:id="colBrand" text="Brand"/>
+            <TableColumn fx:id="colModel" text="Model"/>
+            <TableColumn fx:id="colRented" text="Rented Days"/>
+            <TableColumn fx:id="colAvailable" text="Available Days"/>
+            <TableColumn fx:id="colUtilization" text="Utilization %"/>
+        </columns>
+    </TableView>
+</VBox>

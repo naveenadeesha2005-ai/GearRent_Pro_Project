@@ -1,0 +1,23 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.java.com.home.gearrentpro.controller.CustomerController">
+
+    <Label text="Customer Management" style="-fx-font-size:16;"/>
+
+    <TextField fx:id="txtName" promptText="Customer Name"/>
+    <TextField fx:id="txtNIC" promptText="NIC / Passport"/>
+    <TextField fx:id="txtContact" promptText="Contact No"/>
+    <TextField fx:id="txtEmail" promptText="Email"/>
+
+    <ComboBox fx:id="cmbMembership" promptText="Membership Level"/>
+
+    <Button text="Save Customer"/>
+
+    <TableView fx:id="tblCustomers">
+        <columns>
+            <TableColumn text="Name"/>
+            <TableColumn text="NIC"/>
+            <TableColumn text="Membership"/>
+        </columns>
+    </TableView>
+
+</VBox>

@@ -1,0 +1,22 @@
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.java.com.home.gearrentpro.controller.BranchRevenueReportController">
+
+    <HBox spacing="10">
+        <Label text="From:"/>
+        <DatePicker fx:id="dpFrom"/>
+        <Label text="To:"/>
+        <DatePicker fx:id="dpTo"/>
+        <Button text="Generate Report" onAction="#loadReport"/>
+    </HBox>
+
+    <TableView fx:id="tblReport">
+        <columns>
+            <TableColumn text="Branch" fx:id="colBranch"/>
+            <TableColumn text="Rentals" fx:id="colRentals"/>
+            <TableColumn text="Rental Income" fx:id="colIncome"/>
+            <TableColumn text="Late Fees" fx:id="colLateFees"/>
+            <TableColumn text="Damage Charges" fx:id="colDamage"/>
+        </columns>
+    </TableView>
+
+</VBox>
